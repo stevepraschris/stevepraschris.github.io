@@ -1,0 +1,56 @@
+.hitamungub {
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0) 10%, rgb(255, 89, 219));
+  height: 650px;
+  width: 100%;
+}
+
+.judul {
+  position: absolute;
+  top: 60px;
+  left: 30%;
+  right: 30%;
+  text-align: center;
+  font-family: "Parisienne", cursive;
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+  text-shadow: 0px -2px 7px rgb(0, 247, 255), 0 2px 7px rgb(255, 89, 219);
+}
+
+.tabel {
+  position: absolute;
+  top: 150px;
+  background: rgba(255, 255, 255, 0);
+  left: 10%;
+  right: 10%;
+  overflow-x: auto;
+}
+
+table {
+  margin: auto;
+}
+
+table tr,
+table td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: rgb(38, 220, 226);
+  color: rgb(0, 0, 0);
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+}
+
+td:nth-child(1) {
+  background: rgb(255, 89, 219);
+  font-family: "Lexend-Deca", sans-serif;
+  font-weight: bold;
+}
+
+.isi {
+  background: white;
+  box-shadow: -2px 2px 5px rgb(255, 89, 219), -2px -2px 5px rgb(100, 113, 230), 2px 2px 5px rgb(100, 113, 230), 2px -2px 5px rgb(38, 220, 226);
+  border-radius: 25px;
+}

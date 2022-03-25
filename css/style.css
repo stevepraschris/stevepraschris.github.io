@@ -1,0 +1,333 @@
+/* ---------------------------Import------------------------------ */
+@import url("../css/fonts.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Inconsolata:wght@200;400&family=Josefin+Sans&family=Lexend+Deca:wght@300&family=Livvic&family=Parisienne&display=swap");
+
+/* -------------------Global Classes-------------- */
+:root {
+  --text-gray: #3f4954;
+
+  --Abel: "Abel", cursive;
+  --Anton: "Anton", cursive;
+  --Josefin: "Josefin", cursive;
+  --Lexend: "Lexend", cursive;
+  --Livvic: "Livvic", cursive;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  /* box-sizing: border-box; */
+}
+
+nav {
+  background: rgb(0, 0, 0);
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 300;
+}
+
+@keyframes warnamerek {
+  from {
+    text-shadow: -2px 2px 5px rgb(255, 89, 219), 2px -2px 5px rgb(255, 255, 255);
+  }
+  to {
+    text-shadow: -2px 2px 5px rgb(0, 247, 255), 2px -2px 5px rgb(255, 255, 255);
+  }
+}
+
+.merek {
+  color: white;
+  font-size: 35px;
+  line-height: 50px;
+  padding: 0 85px;
+  font-weight: bold;
+  text-shadow: -2px 2px 5px rgb(255, 89, 219), 2px -2px 5px rgb(255, 255, 255);
+  animation: warnamerek 3s ease 0s infinite alternate-reverse;
+}
+
+.menu {
+  float: right;
+  margin-right: 15px;
+}
+
+.menu li {
+  display: inline-block;
+  line-height: 50px;
+  margin: 0 5px;
+}
+
+.menu li a {
+  color: white;
+  font-size: 17px;
+  text-transform: none;
+  padding: 7px;
+  border-radius: 15px;
+}
+
+.menu li a:hover {
+  box-shadow: -2px 2px 5px rgb(255, 89, 219), 2px -2px 5px rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+
+.aktif {
+  box-shadow: -2px 2px 5px rgb(0, 247, 255), 2px -2px 5px rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+
+.kontak {
+  position: fixed;
+  background: black;
+  padding: 10px;
+  border-radius: 50px;
+  bottom: 15px;
+  right: 15px;
+  box-shadow: -2px 2px 5px rgb(255, 89, 219), 2px -2px 5px rgb(255, 255, 255);
+  color: white;
+  font-size: 30px;
+  text-shadow: -2px 2px 5px rgb(255, 89, 219), 2px -2px 5px rgb(255, 255, 255);
+  z-index: 300;
+}
+
+/* .kontaklink {
+  color: white;
+  font-size: 30px;
+  text-shadow: -2px 2px 5px rgb(255, 89, 219), 2px -2px 5px rgb(255, 255, 255);
+} */
+
+.kontak:hover {
+  box-shadow: -2px 2px 5px rgb(0, 247, 255), 2px -2px 5px rgb(255, 255, 255);
+  text-shadow: -2px 2px 5px rgb(0, 247, 255), 2px -2px 5px rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+
+.hitamungu {
+  position: static;
+  width: 100%;
+  height: 700px;
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0) 70%, rgb(139, 45, 119), rgb(255, 89, 219));
+}
+.waveungu {
+  width: 100%;
+  position: absolute;
+  top: 700px;
+  left: 0px;
+  z-index: -1;
+}
+
+.putihbiru {
+  position: absolute;
+  top: 600px;
+  left: 0px;
+  z-index: -2;
+  width: 100%;
+  height: 700px;
+  background-image: linear-gradient(200deg, rgb(0, 0, 0) 65%, rgb(167, 242, 245));
+}
+
+.footerbiru {
+  width: 100%;
+  position: absolute;
+  top: 1000px;
+  bottom: -1;
+  z-index: 1;
+}
+
+.pageatas {
+  position: absolute;
+  z-index: 2;
+  top: 90px;
+  left: 11%;
+  right: 11%;
+  height: 450px;
+  background: rgba(255, 255, 255, 0);
+}
+
+.pageatasa {
+  float: left;
+  width: 45%;
+  height: 100%;
+  background: rgba(0, 0, 255, 0);
+}
+
+.pageatasa img {
+  position: absolute;
+  margin: 100px 100px 100px 150px;
+  transform: scale(1.5, 1.5);
+  border-radius: 25px;
+  box-shadow: -2px 2px 5px rgb(0, 247, 255), 2px -2px 5px rgb(255, 255, 255);
+}
+
+.pageatasa img:hover {
+  position: absolute;
+  margin: 100px 100px 100px 150px;
+  transform: scale(1.6, 1.6);
+  transition: all 0.3 ease;
+  border-radius: 25px;
+  box-shadow: -2px 2px 5px rgb(255, 89, 219), 2px -2px 5px rgb(255, 255, 255);
+}
+
+.pageatasb {
+  height: 60%;
+  width: 50%;
+  float: right;
+  background: rgba(255, 255, 0, 0);
+  font-family: Parisienne, cursive;
+  line-height: 120px;
+  font-size: 120px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-shadow: -2px 2px 10px rgb(240, 4, 189), 2px -2px 10px rgb(38, 220, 226);
+}
+
+.pageatasc {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 30%;
+  width: 50%;
+  background: rgba(255, 192, 203, 0);
+  font-size: 60px;
+  line-height: 100px;
+  text-align: center;
+  font-family: "Inconsolata", monospace;
+  font-weight: lighter;
+  color: white;
+  padding: auto;
+}
+
+.pageatasc span {
+  font-weight: normal;
+}
+
+.pagetengah {
+  position: absolute;
+  z-index: 3;
+  top: 700px;
+  right: 10%;
+  bottom: auto;
+  left: 10%;
+
+  height: 475px;
+  background: rgba(255, 255, 255, 0);
+}
+
+.pagetengaha {
+  float: left;
+  width: 50%;
+  height: 45%;
+
+  background: rgba(0, 0, 255, 0);
+  margin-right: 20px;
+}
+
+.pagetengaha div {
+  position: absolute;
+
+  font-family: "Livvic", sans-serif;
+  font-size: 20px;
+  background: white;
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+  top: 7px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px rgb(38, 220, 226);
+}
+
+.pagetengahb {
+  float: left;
+
+  width: 50%;
+  height: 27%;
+
+  background: rgba(255, 255, 0, 0);
+  margin-right: 20px;
+}
+
+.pagetengahb div {
+  position: absolute;
+
+  font-family: "Livvic", sans-serif;
+  font-size: 20px;
+  background: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+  top: 217px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px rgb(38, 220, 226);
+}
+
+.pagetengahc {
+  float: left;
+  width: 50%;
+  height: 27%;
+
+  background: rgba(0, 128, 0, 0);
+  margin-right: 20px;
+}
+
+.pagetengahc div {
+  position: absolute;
+
+  font-family: "Livvic", sans-serif;
+  font-size: 20px;
+  background: white;
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+  top: 350px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px rgb(38, 220, 226);
+}
+
+.pagetengahd {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 35%;
+  height: 100%;
+  background: rgba(255, 166, 0, 0);
+}
+
+.pagetengahd img {
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 25px;
+  box-shadow: -2px 2px 10px rgb(240, 4, 189), -2px -2px 10px rgb(100, 113, 230), 2px 2px 10px rgb(100, 113, 230), 2px -2px 10px rgb(38, 220, 226);
+}
+
+/* -------------------------------Pendidikan-------------------------------------------------- */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}

@@ -1,0 +1,45 @@
+.hitambiru {
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 247, 255));
+  height: 900px;
+  width: 100%;
+}
+
+.judul {
+  position: absolute;
+  top: 60px;
+  left: 30%;
+  right: 30%;
+  text-align: center;
+  font-family: "Parisienne", cursive;
+  font-weight: bold;
+  font-size: 70px;
+  color: white;
+  text-shadow: 0px -2px 7px rgb(0, 247, 255), 0 2px 7px rgb(255, 89, 219);
+}
+
+.aktivitas {
+  position: absolute;
+  width: 50%;
+  height: 750px;
+  top: 130px;
+  left: 25%;
+  right: 25%;
+  background: rgba(255, 255, 255, 0);
+}
+
+.aktivitas div {
+  float: left;
+  width: 100%;
+  height: 100px;
+  background: white;
+  padding: 15px 15px 15px 15px;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+  color: black;
+  text-shadow: 0px 0px 10px rgb(255, 89, 219);
+  margin: 20px auto;
+  box-shadow: -2px 2px 5px black;
+  border-radius: 25px;
+}
