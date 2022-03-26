@@ -54,3 +54,7 @@ td:nth-child(1) {
   box-shadow: -2px 2px 5px rgb(255, 89, 219), -2px -2px 5px rgb(100, 113, 230), 2px 2px 5px rgb(100, 113, 230), 2px -2px 5px rgb(38, 220, 226);
   border-radius: 25px;
 }
+
+table {
+  background: black;
+}
