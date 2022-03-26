@@ -3,7 +3,6 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/regapikc/stephen.regapik.com/
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
     - /bin/cp -R img $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
     - /bin/cp -R html $DEPLOYPATH
